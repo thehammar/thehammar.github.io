@@ -7,9 +7,17 @@ layout: compress
   <body>
     {% include thehammar/topbar.html %}
 
-    {{ content }}
+    <div class="row">
+      <div class="small-12 column">
 
-    {% include thehammar/footer.html %}
+        {% include thehammar/header.html %}
+
+        {{ content }}
+
+        {% include thehammar/footer.html %}
+
+      </div>
+    </div>
   {% include thehammar/scripts.html %}
   </body>
 </html>
