@@ -2,7 +2,9 @@
 layout: page
 title: Mark Hammar
 ---
+<span style="float:right;margin-left:20px">
 [![mark][headshot]][contact]  
+</span>
 
 ## I love marketing, graphic design, and printing!  
 
