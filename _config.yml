@@ -22,8 +22,10 @@ thehammar:
     company: RootAndFlow.com
     url: http://www.rootandflow.com
   lang: en
+  stylesheets: 
+    - /assets/stylesheets/thehammar.css
   favicons:
-    - /assets/favicon.png
+    - /assets/img/favicon.png
   topbar:
     toggle: Menu
     right:
