@@ -40,6 +40,6 @@ Contact me today!
 
 ## 951.313.7342 | [mark (at) thehammar.com][contact]
   </div>
-</div>i
+</div>
 
 [contact]: {{ site.url }}/contact/ "Contact Mark"
