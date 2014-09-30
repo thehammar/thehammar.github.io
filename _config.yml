@@ -1,7 +1,11 @@
 markdown: kramdown
+kramdown: 
+  input: GFM
+  parse_block_html: true
 permalink: /blog/:year/:title/
 relative_permalinks: true
 exclude:
+  - bower.json
   - CNAME
   - Gemfile
   - Gruntfile.js
@@ -14,15 +18,18 @@ exclude:
 
 layouts: ./_layouts
 
-noita:
-  name: Noita
-  description: Jekyll theme built with Foundation
-  author:
-    name: Anatol Broder
-    url: http://penibelst.de/
+thehammar:
+  name: TheHammar
+  description: Jekyll theme built for TheHammar.com with Zurb Foundation 5
+  author: 
+    name: Remy Schrader
+    company: RootAndFlow.com
+    url: http://www.rootandflow.com
   lang: en
+  stylesheets: 
+    - /assets/stylesheets/thehammar.css
   favicons:
-    - /assets/2014/04/21/favicon-152.png
+    - /assets/img/favicon.png
   topbar:
     toggle: Menu
     right:

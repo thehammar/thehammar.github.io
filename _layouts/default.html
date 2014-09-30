@@ -1,23 +1,23 @@
 ---
 layout: compress
 ---
-
 <!doctype html>
-<html dir="ltr" lang="{{ site.noita.lang }}">
-{% include thehammar/head.html %}
-<body>
-  {% include thehammar/topbar.html %}
+<html dir="ltr" lang="{{ site.thehammar.lang }}">
+  {% include thehammar/head.html %}
+  <body>
+    {% include thehammar/topbar.html %}
 
-  <div class="row">
-    <div class="column">
-      <h1>{{ page.title }}</h1>
+    <div class="row">
+      <div class="small-12 column">
+
+        {% include thehammar/header.html %}
+
+        {{ content }}
+
+        {% include thehammar/footer.html %}
+
+      </div>
     </div>
-  </div>
-
-  {{ content }}
-
-  {% include thehammar/footer.html %}
-{% include thehammar/scripts.html %}
-
-</body>
+  {% include thehammar/scripts.html %}
+  </body>
 </html>
