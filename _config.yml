@@ -5,6 +5,7 @@ kramdown:
 permalink: /blog/:year/:title/
 relative_permalinks: true
 exclude:
+  - bower.json
   - CNAME
   - Gemfile
   - Gruntfile.js
