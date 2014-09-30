@@ -1,7 +1,12 @@
 markdown: kramdown
+kramdown: 
+  input: GFM
+  safe: true
+  parse_block_html: true
 permalink: /blog/:year/:title/
 relative_permalinks: true
 exclude:
+  - bower.json
   - CNAME
   - Gemfile
   - Gruntfile.js
@@ -13,28 +18,29 @@ exclude:
   - vendor/
 
 layouts: ./_layouts
+baseurl: "http://thehammar.github.io/staging"
 
-noita:
-  name: Noita
-  description: Jekyll theme built with Foundation
-  author:
-    name: Anatol Broder
-    url: http://penibelst.de/
+thehammar:
+  name: TheHammar
+  description: Jekyll theme built for TheHammar.com with Zurb Foundation 5
+  author: 
+    name: Remy Schrader
+    company: RootAndFlow.com
+    url: http://www.rootandflow.com
   lang: en
+  stylesheets: 
+    - /assets/stylesheets/thehammar.css
   favicons:
-    - /assets/2014/04/21/favicon-152.png
+    - /assets/favicon.png
   topbar:
     toggle: Menu
     right:
-      - name: About
-        url: /about/
-      - name: Guide
-        url: /guide/
-      - name: Blog
-        url: /blog/
-      - name: Repository
-        url: https://github.com/penibelst/jekyll-noita
-        class: small button
+      - name: Home
+        url: /
+      - name: Mark
+        url: /mark-hammar/
+      - name: Contact
+        url: /contact/
 
 compress_html:
   clippings: [html, head, title, base, link, meta, style, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address, p, hr, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div, table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th]

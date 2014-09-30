@@ -5,7 +5,7 @@
   {% include noita/robots.html %}
   {% include noita/meta-description.html %}
 
-  {% for favicon in site.noita.favicons %}
+  {% for favicon in site.thehammar.favicons %}
     {% assign size = favicon | split: '-' | last | split: '.' | first %}
     <link rel="icon"
       sizes="{{ size }}x{{ size }}"
@@ -16,13 +16,13 @@
     {% endfor %}
 
     <link rel="alternate" href="/blog/feed.atom"
-      title="{{ site.noita.name }}" type="application/atom+xml">
+      title="{{ site.thehammar.name }}" type="application/atom+xml">
 
-    <link rel="stylesheet" href="/noita/foundation/css/normalize.css">
-    <link rel="stylesheet" href="/noita/foundation/css/foundation.min.css">
-    {% for stylesheet in site.noita.stylesheets %}
-      <link rel="stylesheet" href="{{ stylesheet }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/foundation/css/normalize.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/foundation/css/foundation.css">
+    {% for stylesheet in site.thehammar.stylesheets %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/{{ stylesheet }}">
     {% endfor %}
 
-    <script src="/noita/foundation/js/vendor/modernizr.js"></script>
+    <script src="{{ site.baseurl }}/bower_components/foundation/js/vendor/modernizr.js"></script>
 </head>
