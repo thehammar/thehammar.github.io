@@ -1,4 +1,7 @@
 markdown: kramdown
+kramdown: 
+  input: GFM
+  parse_block_html: true
 permalink: /blog/:year/:title/
 relative_permalinks: true
 exclude:
