@@ -18,7 +18,7 @@ exclude:
   - vendor/
 
 layouts: ./_layouts
-baseurl: "http://thehammar.github.io/staging"
+baseurl: "http://thehammar.github.io"
 
 thehammar:
   name: TheHammar
