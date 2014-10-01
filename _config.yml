@@ -18,6 +18,8 @@ exclude:
   - vendor/
 
 layouts: ./_layouts
+sass: 
+  sass_dir: bower_components/foundation/scss
 baseurl: "http://0.0.0.0:4000"
 
 thehammar:
@@ -29,7 +31,7 @@ thehammar:
     url: http://www.rootandflow.com
   lang: en
   stylesheets: 
-    - assets/stylesheets/thehammar.css
+    - css/thehammar.css
   favicons:
     - /assets/favicon.png
   topbar:
