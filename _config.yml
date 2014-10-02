@@ -33,7 +33,7 @@ thehammar:
     url: http://www.rootandflow.com
   lang: en
   stylesheets: 
-    - css/thehammar.css
+    - /css/thehammar.css
   favicons:
     - /assets/favicon.png
   topbar:
