@@ -4,10 +4,3 @@
 @import "settings";
 @import "foundation";
 
-body {
-  background-image: url('{{ site.baseurl }}/css/img/scratch-patch.png');
-}
-
-#header {
-  background-image: url('{{ site.baseurl }}/css/img/title-splash.jpg');
-}
