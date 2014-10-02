@@ -19,8 +19,10 @@ exclude:
 
 layouts: ./_layouts
 sass: 
-  sass_dir: bower_components/foundation/scss
-baseurl: "http://thehammar.github.io/staging"
+  sass_dir: _scss
+  load_paths:
+    - bower_components/foundation/scss
+baseurl: "staging"
 
 thehammar:
   name: TheHammar
