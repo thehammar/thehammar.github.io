@@ -38,8 +38,8 @@ Are you interested in having me help your business? Call or email to start the c
 
 Contact me today!  
 
-## 951.313.7342 | [mark (at) thehammar.com][contact]
+{% include thehammar/contact-info.md %}
+
   </div>
 </div>
 
-[contact]: {{ site.baseurl }}/contact/ "Contact Mark"
