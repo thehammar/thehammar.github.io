@@ -19,6 +19,7 @@ exclude:
 
 sass: 
   sass_dir: bower_components/foundation/scss
+#  style: compressed
 
 markdown: kramdown
 kramdown: 
