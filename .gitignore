@@ -2,3 +2,4 @@ _site/
 Gemfile.lock
 .sass-cache
 _config.yml
+.ruby-version
