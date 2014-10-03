@@ -42,4 +42,4 @@ Contact me today!
   </div>
 </div>
 
-[contact]: {{ site.url }}/contact/ "Contact Mark"
+[contact]: {{ site.baseurl }}/contact/ "Contact Mark"

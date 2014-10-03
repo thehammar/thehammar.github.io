@@ -20,5 +20,5 @@ Contact me today!
 
 ### 951.313.7342 | [mark (at) thehammar.com][contact]  
 
-[headshot]: {{ site.url }}/mark-hammar/img/mark-hammar.jpg "Contact Mark Hammar"  
-[contact]: {{ site.url }}/contact/ "Contact Mark"  
+[headshot]: {{ site.baseurl }}/mark-hammar/img/mark-hammar.jpg "Contact Mark Hammar"  
+[contact]: {{ site.baseurl }}/contact/ "Contact Mark"  

@@ -10,7 +10,7 @@
     <ul class="left">
     {% for item in site.thehammar.topbar.left %}
       <li{% if item.class %} class="has-form"{% endif %}>
-        <a href="{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
+        <a href="{{site.baseurl }}{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
       </li>
     {% endfor %}
     </ul>	
@@ -20,7 +20,7 @@
     <ul class="right">
     {% for item in site.thehammar.topbar.right %}
       <li{% if item.class %} class="has-form"{% endif %}>
-        <a href="{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
+        <a href="{{site.baseurl }}{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
       </li>
     {% endfor %}
     </ul>
