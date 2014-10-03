@@ -1,12 +1,10 @@
 safe: true
+baseurl: "/staging"
+lsi: false
+highlighter: pygments
 
-markdown: kramdown
-kramdown: 
-  input: GFM
-  safe: true
-  parse_block_html: true
-permalink: /blog/:year/:title/
-relative_permalinks: true
+layouts: ./_layouts
+
 exclude:
   - bower.json
   - CNAME
@@ -19,13 +17,13 @@ exclude:
   - README.md
   - vendor/
 
-layouts: ./_layouts
 sass: 
   sass_dir: bower_components/foundation/scss
-baseurl: "/staging"
 
-lsi: false
-highlighter: pygments
+markdown: kramdown
+kramdown: 
+  input: GFM
+  parse_block_html: true
 
 thehammar:
   name: TheHammar
