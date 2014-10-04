@@ -38,6 +38,18 @@
 
 
 
+a:link {
+    color: #33ccff;
+  }
+a:visited {
+    color: #33ccff;
+  }
+a:hover {
+    color: #f53d00;
+  }
+
+
+
 
 
 /*------------------------------------*\
@@ -46,8 +58,69 @@
 
 body {
   background-image: url('{{ site.baseurl }}/css/img/scratch-patch.png');
+  color: #4f4f4f;
 }
 
 #header {
-  background-image: url('img/title-splash.jpg');
+  background-image: url('{{ site.baseurl }}/css/img/title-splash.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: 10px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  clear: both;
+  height: auto !important;
+  min-height: 467px;
+  width: 940px;
+}
+
+#header-tab {
+  background-color: #33ccff;
+  color: #ffffff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  clear: both;
+  float: left;
+  font-size: 3.2em;
+  margin: 250px 0 0 -23px;
+  padding: 20px;
+  position: relative;
+}
+#header-tab:after {
+  background-image: url("images/header-corner.png");
+  background-repeat: no-repeat;
+  bottom: -8px;
+  content: ".";
+  font-size: 0;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  width: 13px;
+}
+
+#subheader-tab {
+  background-color: #f53d00;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  clear: both;
+  color: #ffffff;
+  float: left;
+  font-size: 18px;
+  margin: 20px 0 0 -23px;
+  padding: 20px;
+  position: relative;
+}
+
+#subheader-tab:after {
+  background-image: url("images/subheader-corner.png");
+  background-repeat: no-repeat;
+  bottom: -8px;
+  content: ".";
+  font-size: 0;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  width: 13px;
+}
+
+#ribbon {
+  
 }
