@@ -1,9 +1,8 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  {% include noita/robots.html %}
-  {% include noita/meta-description.html %}
+  {% include thehammar/meta.html %}
+  <title>{{ site.name }}{% if page.title %} &#183; {{ page.title }}{% endif %}</title>
+  {% include thehammar/robots.html %}
+  {% include thehammar/opengraph.html %}
 
   {% for favicon in site.thehammar.favicons %}
     {% assign size = favicon | split: '-' | last | split: '.' | first %}
@@ -18,7 +17,6 @@
     <link rel="alternate" href="/blog/feed.atom"
       title="{{ site.thehammar.name }}" type="application/atom+xml">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/bower_components/foundation/css/normalize.css">
     {% for stylesheet in site.thehammar.stylesheets %}
       <link rel="stylesheet" href="{{ site.baseurl }}{{ stylesheet }}">
     {% endfor %}

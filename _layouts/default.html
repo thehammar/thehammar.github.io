@@ -5,17 +5,20 @@
 <html dir="ltr" lang="{{ site.thehammar.lang }}">
   {% include thehammar/head.html %}
   <body>
-    {% include thehammar/topbar.html %}
-
-    <div class="row">
-      <div class="small-12 column">
-
-        {% include thehammar/header.html %}
-
-        {{ content }}
-
-        {% include thehammar/footer.html %}
-
+    <div id="bg-highlight">
+      <div class="row">
+        <div class="small-12 column">
+          <div id="main-wrapper">
+          {% include thehammar/topbar.html %}
+            <div id="main">
+              {% include thehammar/header.html %}
+              <div id="main-content">
+                {{ content }}
+              </div>
+              {% include thehammar/footer.html %}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   {% include thehammar/scripts.html %}

@@ -1,4 +1,6 @@
 safe: true
+# url: http://thehammar.github.io
+# baseurl: /staging
 lsi: false
 highlighter: pygments
 
@@ -18,20 +20,35 @@ exclude:
 
 sass: 
   sass_dir: bower_components/foundation/scss
+#  style: compressed
 
 markdown: kramdown
 kramdown: 
   input: GFM
   parse_block_html: true
 
+# Site Info
+name: HAMMAR
+description: "A talented design firm located in Riverside, CA specializing in graphic design, marketing and printing."
+vcard:
+  email: "mark@thehammar.com"
+  fn: "Mark Hammar"
+  locality: "Riverside"
+  phone: "(951) 313-7342"
+  state: "CA"
+  street-address: "6185 Magnolia Ave. Box #111"
+  zip: "92506"
+
+# Theme Info
 thehammar:
   name: TheHammar
-  description: Jekyll theme built for TheHammar.com with Zurb Foundation 5
+  description: "Jekyll theme built with Zurb Foundation 5"
   author: 
-    name: Remy Schrader
-    company: RootAndFlow.com
-    url: http://www.rootandflow.com
+    name: "Remy Schrader"
+    company: "RootAndFlow.com"
+    url: "http://www.rootandflow.com"
   lang: en
+  generator: "Built on Jekyll for Github Pages"
   stylesheets: 
     - /css/thehammar.css
   favicons:
@@ -45,6 +62,12 @@ thehammar:
         url: /mark-hammar/
       - name: Contact
         url: /contact/
+
+# Sitewide Facebook Opengraph tags
+# Page specific tags can be set with "og:" in pagefile YAML FrontMatter
+og:
+  image: "/css/img/title-splash.jpg"
+  type: website
 
 compress_html:
   clippings: [html, head, title, base, link, meta, style, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address, p, hr, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div, table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th]

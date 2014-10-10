@@ -1,11 +1,18 @@
-  <div class="row">
-    <div class="column">
+  <div class="row text-center">
+    <div class="small-centered small-11 columns">
       <hr>
     </div>
-    <div class="small-12 medium-4 columns">
-      <p>© 2014 Mark Hammar</p>
+    <div class="small-12 columns">
+      <p>&#169; 2014 {{ site.vcard.fn }}
+      <span class="inline-hide-for-small"> &#183; </span>
+      <br class="show-for-small-only">
+      {{ site.vcard.street-address }}, {{ site.vcard.locality }}, {{ site.vcard.state }} {{ site.vcard.zip}}
+      </p>
     </div>
-    <div class="small-12 medium-8 columns">
-      <p>Web Design by <a target:"_blank" href="http://www.rootandflow.com/">RootAndFlow.com</a></p>
+    <div class="small-12 columns">
+      <p>Responsive Web Design by 
+      <br class="show-for-small-only">
+      <a target:"_blank" href="{{ site.thehammar.author.url }}">{{ site.thehammar.author.company }}</a>
+      </p>
     </div>
   </div>

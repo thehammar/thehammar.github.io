@@ -1,29 +1,35 @@
+<div class="contain-to-grid">
   <div class="top-bar" data-topbar id="topbar">
-    <ul class="title-area">
-      <li class="name">
-          <h1><a href="/">{{ site.thehammar.name }}</a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#topbar"><span>{{ site.thehammar.topbar.toggle }}</span></a></li>
-    </ul>
-  <div class="top-bar-section">
-    {% if site.thehammar.topbar.left %}
-    <ul class="left">
-    {% for item in site.thehammar.topbar.left %}
-      <li{% if item.class %} class="has-form"{% endif %}>
-        <a href="{{site.baseurl }}{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
-      </li>
-    {% endfor %}
-    </ul>	
-    {% endif %}
+      <ul class="title-area">
+        <li class="name">
+            <h1> </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#topbar"><span>{{ site.thehammar.topbar.toggle }}</span></a></li>
+      </ul>
+    <div class="top-bar-section">
+      {% if site.thehammar.topbar.left %}
+      <ul class="left">
+      {% for item in site.thehammar.topbar.left %}
+        <li class="divider"><li>
+        <li{% if item.class %} class="has-form"{% endif %}>
+          <a href="{{site.baseurl }}{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+        <li class="divider"><li>
+      </ul>	
+      {% endif %}
 
-    {% if site.thehammar.topbar.right %}
-    <ul class="right">
-    {% for item in site.thehammar.topbar.right %}
-      <li{% if item.class %} class="has-form"{% endif %}>
-        <a href="{{site.baseurl }}{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-    {% endif %}
+      {% if site.thehammar.topbar.right %}
+      <ul class="right">
+      {% for item in site.thehammar.topbar.right %}
+        <li class="divider"><li>
+        <li{% if item.class %} class="has-form"{% endif %}>
+          <a href="{{site.baseurl }}{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+        <li class="divider"><li>
+      </ul>
+      {% endif %}
+    </div>
   </div>
 </div>
