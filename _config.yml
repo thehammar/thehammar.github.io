@@ -1,5 +1,5 @@
 safe: true
-url: http://thehammar.github.io
+# url: http://thehammar.github.io
 # baseurl: /staging
 lsi: false
 highlighter: pygments
@@ -20,7 +20,7 @@ exclude:
 
 sass: 
   sass_dir: bower_components/foundation/scss
-  style: compressed
+#  style: compressed
 
 markdown: kramdown
 kramdown: 
