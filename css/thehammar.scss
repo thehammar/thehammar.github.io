@@ -151,8 +151,36 @@ body {
                 width: 15%;
               z-index: -1;
 }
-/* Default header font size for medium screens 641px wide and above */
-@media #{$medium-up} {
+
+
+
+
+
+/* Image styles */
+
+#headshot.right {
+               margin: 0.382rem 0.382rem 0.382rem 1.618rem;
+              padding: 0.236rem;
+}
+
+#headshot.left {
+               margin: 0.382rem 1.618rem 0.382rem 0.382rem;
+              padding: 0.236rem;
+}
+
+/* Media Queries for 
+Responsive styles */
+
+
+/* for Large screens 1025px wide and up */
+
+@media #{$large-up} {
+
+/** Header Ribbons 
+ * font sizes 
+ * positioning
+ */
+
   #header-tab {
                bottom: 48%;
                  left: -6%;
@@ -165,12 +193,52 @@ body {
               padding: 2.5% 5%;
             font-size: 1.618rem;
   }
+
+}
+
+
+/* for Medium screens 641px wide and above */ 
+@media #{$medium-up} {
+
+// Display inline elements hidden on small and mobile screens 
   .inline-hide-for-small {
               display: inline;
   }
+
 }
-/* Default header font size for small and mobile screens 640px wide and below */
+
+/* for Medium screens ONLY 641 - 1024px wide */
+@media #{$medium-only} {
+
+/** Header Ribbons 
+ * font sizes 
+ * positioning
+ */
+
+  #header-tab {
+               bottom: 48%;
+                 left: -6%;
+              padding: 0 3%;
+            font-size: 4.5rem;
+  }
+  #header-subtab {
+               bottom: 16%;
+                 left: -4%;
+              padding: 2.5% 5%;
+            font-size: 1.45rem;
+  }
+
+}
+
+
+/* for Small/Mobile screens 640px wide and below */ 
 @media #{$small-only} {
+
+/** Header Ribbons 
+ * font sizes 
+ * positioning
+ */
+
   #header-tab {
                bottom: 48%;
                  left: -6%;
@@ -183,34 +251,12 @@ body {
               padding: 2.5% 5%;
             font-size: 0.618rem;
   }
+
+
+  // Hide inline elements displayed on medium screens and above 
   .inline-hide-for-small {
               display: none;
   }
+
 }
 
-
-#ribbon {
-            position: relative;
-               width: 50%;
-           font-size: 1.5em;
-         font-weight: bold;
-             padding: 6px 20px 6px 70px;
-              margin: 30px 10px 10px -70px;
-               color: #555;
-    background-color: #999;
-         text-shadow: 0px 1px 2px #bbb;
-  -webkit-box-shadow: 0px 2px 4px #888;
-     -moz-box-shadow: 0px 2px 4px #888;
-          box-shadow: 0px 2px 4px #888;
-}
-#ribbon:after {
-             content: ' ';
-            position: absolute;
-               width: 0;
-              height: 0;
-                left: 0px;
-                 top: 100%;
-        border-width: 5px 10px;
-        border-style: solid;
-        border-color: #666 #666 transparent transparent;
-}
