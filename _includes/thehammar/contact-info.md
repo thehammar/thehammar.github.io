@@ -1,3 +1,3 @@
-## 951.313.7342 | [mark (at) thehammar.com][contact]  
+## {{ site.vcard.phone }} | [mark (at) thehammar.com][contact]  
+{: .text-right}
 [contact]: {{ site.baseurl }}/contact/ "Contact Mark"  
-

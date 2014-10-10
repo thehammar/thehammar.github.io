@@ -1,6 +1,8 @@
 {
   "name": "TheHammar.com",
   "dependencies": {
-    "foundation": ">=5.1.0"
+    "foundation": ">=5.1.0",
+    "FitText.js": "*",
+    "normalize-scss": "~3.0.1"
   }
-} 
+}

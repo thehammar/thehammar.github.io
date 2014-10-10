@@ -30,6 +30,14 @@ kramdown:
 # Site Info
 name: HAMMAR
 description: "A talented design firm located in Riverside, CA specializing in graphic design, marketing and printing."
+vcard:
+  email: "mark@thehammar.com"
+  fn: "Mark Hammar"
+  locality: "Riverside"
+  phone: "(951) 313-7342"
+  state: "CA"
+  street-address: "6185 Magnolia Ave. Box #111"
+  zip: "92506"
 
 # Theme Info
 thehammar:
