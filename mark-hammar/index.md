@@ -4,11 +4,11 @@ title: Mark Hammar
 subtitle: "Hello!"
 description: I love marketing, graphic design, and printing!  
 ---
+# {{ page.description }}
+
 <span style="float:right;margin:1.75rem">
 [![mark][headshot]][contact]  
 </span>
-
-# {{ page.description }}
 
 ### And I love problem solving.  
 {: .subheader}
