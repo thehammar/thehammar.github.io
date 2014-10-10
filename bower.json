@@ -1,6 +1,11 @@
 {
   "name": "TheHammar.com",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "authors": [
+    "Remy Schrader <remy@rootandflow.com>"
+  ],
+  "description": "Jekyll theme built with Zurb Foundation 5 for Github Pages",
+  "private": true,
   "dependencies": {
     "foundation": ">=5.1.0",
     "FitText.js": "*",
