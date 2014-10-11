@@ -8,10 +8,10 @@
     {% assign size = favicon | split: '-' | last | split: '.' | first %}
     <link rel="icon"
       sizes="{{ size }}x{{ size }}"
-      href="{{ favicon }}">
+      href="{{ site.baseurl }}{{ favicon }}?v=2">
     <link rel="apple-touch-icon"
       sizes="{{ size }}x{{ size }}"
-      href="{{ favicon }}">
+      href="{{ site.baseurl }}{{ favicon }}?v=2">
     {% endfor %}
 
     <link rel="alternate" href="/blog/feed.atom"
