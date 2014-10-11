@@ -156,18 +156,6 @@ body {
 
 
 
-/* Image styles */
-
-#headshot.right {
-               margin: 0.382rem 0.382rem 0.382rem 1.618rem;
-              padding: 0.236rem;
-}
-
-#headshot.left {
-               margin: 0.382rem 1.618rem 0.382rem 0.382rem;
-              padding: 0.236rem;
-}
-
 /* Media Queries for 
 Responsive styles */
 
@@ -199,6 +187,20 @@ Responsive styles */
 
 /* for Medium screens 641px wide and above */ 
 @media #{$medium-up} {
+
+/* Image styles */
+
+#headshot.right {
+               margin: 0.382rem 0.382rem 0.382rem 1.618rem;
+              padding: 0.236rem;
+}
+
+#headshot.left {
+               margin: 0.382rem 1.618rem 0.382rem 0.382rem;
+              padding: 0.236rem;
+}
+
+
 
 // Display inline elements hidden on small and mobile screens 
   .inline-hide-for-small {
@@ -251,6 +253,22 @@ Responsive styles */
               padding: 2.5% 5%;
             font-size: 0.618rem;
   }
+
+/* Image styles */
+
+#headshot.right {
+               margin: 0.382rem auto;
+                clear: both;
+              padding: 0.236rem;
+                float: none !important;
+}
+
+#headshot.left {
+               margin: 0.382rem auto;
+                clear: both;
+              padding: 0.236rem;
+                float: none !important;
+}
 
 
   // Hide inline elements displayed on medium screens and above 
