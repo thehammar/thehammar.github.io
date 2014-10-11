@@ -12,4 +12,6 @@ group :test do
   gem 'jekyll'
   gem 'html-proofer'
   gem 'rake'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-sitemap'
 end
