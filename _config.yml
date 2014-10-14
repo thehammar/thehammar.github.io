@@ -3,14 +3,20 @@ url: http://thehammar.github.io
 baseurl: /staging
 lsi: false
 highlighter: pygments
+timezone: America/Los_Angeles
 
 layouts: ./_layouts
+
+gems: 
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 exclude:
   - bower.json
   - CNAME
   - Gemfile
   - Gruntfile.js
+  - Compression-by-Noita--license
   - LICENSE
   - node_modules/
   - package.json
@@ -20,7 +26,7 @@ exclude:
 
 sass: 
   sass_dir: bower_components/foundation/scss
-  style: compressed
+#  style: compressed
 
 markdown: kramdown
 kramdown: 
@@ -42,13 +48,13 @@ vcard:
 # Theme Info
 thehammar:
   name: TheHammar
-  description: "Jekyll theme built with Zurb Foundation 5"
+  description: "Jekyll theme built with Zurb Foundation 5 responsive framework."
   author: 
     name: "Remy Schrader"
     company: "RootAndFlow.com"
     url: "http://www.rootandflow.com"
   lang: en
-  generator: "Built on Jekyll for Github Pages"
+  generator: "Built for Jekyll and published on Github Pages."
   stylesheets: 
     - /css/thehammar.css
   favicons:
