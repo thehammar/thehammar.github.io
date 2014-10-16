@@ -34,9 +34,12 @@
 \*------------------------------------*/
 
 @import "../../normalize-scss/normalize";
-@import "../../../_scss/settings";
+@import "../../../the-hammar/css/foundation_settings";
 @import "foundation";
 
+// Globals
+// Liquid Variables
+{% capture img_dir %}{{ site.url }}{{ site.baseurl }}/_includes{{ site.longmans.root }}/{{ site.theme.name | replace: ' ','-' | downcase }}/img{% endcapture %}
 
 
 a:visited {
@@ -59,11 +62,11 @@ a:active {
 \*------------------------------------*/
 
 body {
-  background-image: url('{{ site.baseurl }}/css/img/scratch-patch.png');
+  background-image: url('{{ img_dir }}/scratch-patch.png');
   color: #4f4f4f;
 }
 #bg-highlight {
-     background-image: url('{{ site.baseurl }}/css/img/highlight.png');
+     background-image: url('{{ site.baseurl }}/_includes/longmans/the-hammar/img/highlight.png');
   background-position: center top;
     background-repeat: no-repeat;
 }
@@ -95,14 +98,14 @@ body {
 }
 
 #header-bg {
-     background-image: url('{{ site.baseurl }}/css/img/title-splash.jpg');
+     background-image: url('{{ site.baseurl }}/_includes/longmans/the-hammar/img/title-splash.jpg');
       background-size: cover;
   background-position: center; /* IE fix */
                 width: 100%;
        padding-bottom: 50%;
 }
 #header-foot {
-     background-image: url('{{ site.baseurl }}/css/img/banner-shadow.png');
+     background-image: url('{{ site.baseurl }}/_includes/longmans/the-hammar/img/banner-shadow.png');
   background-position: right top; 
     background-repeat: repeat-x;
                height: 40px;

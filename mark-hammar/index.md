@@ -21,6 +21,6 @@ My goal is to be the consultant for all your needs. Having you choose me to assi
 Contact me today!  
 </div>
 
-{% include thehammar/contact-info.md %}
+{% include /longmans/the-hammar/contact-info.md %}
 
 [headshot]: {{ site.baseurl }}/mark-hammar/img/mark-hammar.jpg "Contact Mark Hammar"  

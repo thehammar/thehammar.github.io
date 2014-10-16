@@ -1,23 +1,23 @@
 <head>
-  {% include thehammar/meta.html %}
+  {% include {{ in_dir }}/meta.html %}
   <title>{{ site.name }}{% if page.title %} &#183; {{ page.title }}{% endif %}</title>
-  {% include thehammar/robots.html %}
-  {% include thehammar/opengraph.html %}
+  {% include {{ in_dir }}/robots.html %}
+  {% include {{ in_dir }}/opengraph.html %}
 
-  {% for favicon in site.thehammar.favicons %}
+  {% for favicon in site.theme.favicons %}
     {% assign size = favicon | split: '-' | last | split: '.' | first %}
     <link rel="icon"
       sizes="{{ size }}x{{ size }}"
-      href="{{ site.baseurl }}{{ favicon }}?v=2">
+      href="{{ site.baseurl }}{{ favicon }}">
     <link rel="apple-touch-icon"
       sizes="{{ size }}x{{ size }}"
-      href="{{ site.baseurl }}{{ favicon }}?v=2">
+      href="{{ site.baseurl }}{{ favicon }}">
     {% endfor %}
 
     <link rel="alternate" href="/blog/feed.atom"
-      title="{{ site.thehammar.name }}" type="application/atom+xml">
+      title="{{ site.name }}" type="application/atom+xml">
 
-    {% for stylesheet in site.thehammar.stylesheets %}
+    {% for stylesheet in site.theme.stylesheets %}
       <link rel="stylesheet" href="{{ site.baseurl }}{{ stylesheet }}">
     {% endfor %}
     <link rel="stylesheet" id='google-font-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CLora%3A400%2C700%7CDroid+Sans+Mono%7COswald%3A400%2C700%7CMontserrat%3A400%2C700' type='text/css' media='all'>
