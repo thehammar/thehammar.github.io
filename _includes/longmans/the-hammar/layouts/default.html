@@ -1,0 +1,27 @@
+---
+# layout: compress
+---
+<!doctype html>
+{% capture in_dir %}{{ site.longmans.root }}/{{ site.theme.name | replace: ' ','-' | downcase }}{% endcapture %}
+<html dir="ltr" lang="{{ site.theme.lang }}">
+  {% include {{ in_dir }}/head.html %}
+  <body>
+    <div id="bg-highlight">
+      <div class="row">
+        <div class="small-12 column">
+          <div id="main-wrapper">
+          {% include {{ in_dir }}/topbar.html %}
+            <div id="main">
+              {% include {{ in_dir }}/header.html %}
+              <div id="main-content">
+                {{ content }}
+              </div>
+              {% include {{ in_dir }}/footer.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% include {{ in_dir }}/scripts.html %}
+  </body>
+</html>

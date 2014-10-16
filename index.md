@@ -4,6 +4,7 @@ title: TheHammar.com
 subtitle: "Design is a Good Idea"
 description: Graphic Design by Mark Hammar
 ---
+{% capture in_dir %}{{ site.longmans.root }}/{{ site.theme.name | replace: ' ','-' | downcase }}{% endcapture %}
 <div class="row"> 
   <div class="small-12 column">
 ## Helping your company  
@@ -39,7 +40,7 @@ Are you interested in having me help your business? Call or email to start the c
 
 Contact me today!  
 
-{% include thehammar/contact-info.md %}
+{% include {{ in_dir }}/contact-info.md %}
 
   </div>
 </div>

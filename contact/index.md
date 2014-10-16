@@ -8,9 +8,9 @@ robots: none
 
 If you have general questions, please submit the form below. I will respond quickly with an answer.  
 
-{% include thehammar/contact-form.html %}
+{% include longmans/the-hammar/contact-form.html %}
 
 All questions, comment or requests submitted on this page go directly to my iPhone!
 Of course, if you need me right away give me a call!  
 
-{% include thehammar/contact-info.md %}
+{% include longmans/the-hammar/contact-info.md %}

@@ -5,13 +5,15 @@ lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
 
-layouts: ./_layouts
-
 gems: 
   - jekyll-redirect-from
   - jekyll-sitemap
 
+include: 
+  - _includes
+
 exclude:
+  - _includes/longmans/the-hammar/layouts
   - bower.json
   - CNAME
   - Gemfile
@@ -23,10 +25,6 @@ exclude:
   - Rakefile
   - README.md
   - vendor/
-
-sass: 
-  sass_dir: bower_components/foundation/scss
-#  style: compressed
 
 markdown: kramdown
 kramdown: 
@@ -45,9 +43,19 @@ vcard:
   street-address: "6185 Magnolia Ave. Box #111"
   zip: "92506"
 
+# Longmans framework globals
+## Jekyll options
+layouts: ./_includes/longmans/the-hammar/layouts
+sass: 
+  sass_dir: _includes/longmans/bower_components/foundation/scss
+#  style: compressed
+## Longmans specific
+longmans:
+  root: "/longmans"
+
 # Theme Info
-thehammar:
-  name: TheHammar
+theme: 
+  name: "The Hammar"
   description: "Jekyll theme built with Zurb Foundation 5 responsive framework."
   author: 
     name: "Remy Schrader"
@@ -56,9 +64,10 @@ thehammar:
   lang: en
   generator: "Built for Jekyll and published on Github Pages."
   stylesheets: 
-    - /css/thehammar.css
+    - /_includes/longmans/the-hammar/css/main.css
+  javascripts:
   favicons:
-    - /assets/favicon.png
+    - /_includes/longmans/the-hammar/img/favicon-172.png
   topbar:
     toggle: Menu
     right:
