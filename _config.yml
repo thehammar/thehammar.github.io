@@ -1,5 +1,5 @@
 safe: true
-url: http://thehammar.github.io
+# url: http://thehammar.github.io
 # baseurl: /staging
 lsi: false
 highlighter: pygments
@@ -48,7 +48,7 @@ vcard:
 layouts: ./_includes/longmans/the-hammar/layouts
 sass: 
   sass_dir: _includes/longmans/bower_components/foundation/scss
-  style: compressed
+# style: compressed
 ## Longmans specific
 longmans:
   root: "/longmans"
