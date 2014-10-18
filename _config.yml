@@ -1,6 +1,6 @@
 safe: true
 url: http://thehammar.github.io
-baseurl: /staging
+# baseurl: /staging
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
