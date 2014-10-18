@@ -1,6 +1,6 @@
 safe: true
-# url: http://thehammar.github.io
-# baseurl: /staging
+url: http://thehammar.github.io
+baseurl: /staging
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
@@ -53,7 +53,7 @@ theme: &the_hammar
 layouts: *longmans_lay
 sass: 
   sass_dir: _includes/longmans/bower_components/foundation/scss
-# style: compressed
+  style: compressed
 ## Longmans specific
 longmans: *the_hammar
 
