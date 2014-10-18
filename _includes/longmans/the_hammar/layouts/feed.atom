@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ site.thehammar.lang }}">
-  <title>{{ site.thehammar.name }}</title>
-  <subtitle>{{ site.thehammar.description }}</subtitle>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ site.longmans.lang }}">
+  <title>{{ site.name }}</title>
+  <subtitle>{{ site.description }}</subtitle>
 
-{% if site.thehammar.url %}
-  {% assign base = site.thehammar.url %}
+{% if site.url %}
+  {% assign base = site.url %}
 {% elsif site.github.url %}
   {% assign base = site.github.url %}
 {% else %}
   {% assign base = '' %}
 {% endif %}
 
-  <id>{{ base }}{{ page.url }}</id>
+<id>{{ base }}{{ site.baseurl }}{{ page.url }}</id>
   <author>
-    <name>{{ site.thehammar.author.name }}</name>
-    <uri>{{ site.thehammar.author.url }}</uri>
+    <name>{{ site.vcard.fn }}</name>
+    <uri>{{ base }}{{ site.baseurl }}</uri>
   </author>
   <link
     rel="alternate"

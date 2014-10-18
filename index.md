@@ -1,27 +1,23 @@
 ---
-layout: default
 title: TheHammar.com
 subtitle: "Design is a Good Idea"
-description: Graphic Design by Mark Hammar
+description: "Graphic Design by Mark Hammar"
 ---
-{% capture in_dir %}{{ site.longmans.root }}/{{ site.theme.name | replace: ' ','-' | downcase }}{% endcapture %}
 <div class="row"> 
   <div class="small-12 column">
 ## Helping your company  
 
 **The world changes constantly. For your company to be heard, you need to be more nimble than ever. Identifying and creating organizational change is never easy. That's where my 20 years of experience in the communication, design and printing fields comes in handy.**  
+
   </div>
 </div>
 <div class="row"> 
   <div class="small-12 medium-6 column">
 ### Bring my experience to your business  
 
-I offer a range of consulting services--all designed to 
-help your company reach its potential. Whether you're looking for a small tweak or complete overhaul, I have 
-you covered.  
+I offer a range of consulting services--all designed to help your company reach its potential. Whether you're looking for a small tweak or complete overhaul, I have you covered.  
 
-Weekly, Monthly and Yearly Strategy meetings 
-focusing on:  
+Weekly, Monthly and Yearly Strategy meetings focusing on:  
 
 - Communications and Marketing  
 - Cutting Edge Design that works  
@@ -40,7 +36,7 @@ Are you interested in having me help your business? Call or email to start the c
 
 Contact me today!  
 
-{% include {{ in_dir }}/contact-info.md %}
+{% include {{ page.d.inc }}/contact-info.md %}
 
   </div>
 </div>

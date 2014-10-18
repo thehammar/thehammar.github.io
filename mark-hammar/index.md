@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Mark Hammar
 subtitle: "Hello!"
 description: "I love marketing, graphic design, and printing!" 
@@ -21,6 +20,6 @@ My goal is to be the consultant for all your needs. Having you choose me to assi
 Contact me today!  
 </div>
 
-{% include /longmans/the-hammar/contact-info.md %}
+{% include {{ page.d.inc }}/contact-info.md %}
 
-[headshot]: {{ site.baseurl }}/mark-hammar/img/mark-hammar.jpg "Contact Mark Hammar"  
+[headshot]: img/mark-hammar.jpg "Contact Mark Hammar"  
