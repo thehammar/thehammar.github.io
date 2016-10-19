@@ -13,7 +13,7 @@ kramdown:
   parse_block_html: true
 
 # Theme Info
-theme: &the_hammar
+style: &the_hammar
   description: "Jekyll theme built with Zurb Foundation 5 responsive framework."
   author: 
     name: "Remy Schrader"
@@ -50,8 +50,8 @@ theme: &the_hammar
 
 # Longmans framework globals
 ## Jekyll options
-layouts: *longmans_lay
-sass: 
+layouts_dir: *longmans_lay
+sass:
   sass_dir: _includes/longmans/bower_components/foundation/scss
   style: compressed
 ## Longmans specific
