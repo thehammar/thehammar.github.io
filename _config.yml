@@ -2,7 +2,7 @@ safe: true
 url: http://thehammar.github.io
 # baseurl: /staging
 lsi: false
-highlighter: pygments
+highlighter: rouge
 timezone: America/Los_Angeles
 permalink: /:categories/:year/:month/:title/ 
 # final trailing slash is optional here in config; will be appended to url address but not to {{ page.url }} liquid output 
